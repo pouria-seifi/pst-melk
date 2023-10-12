@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="w-100 h-100 bg-primary1">
+    <main className="w-100 h-100 bg-primary">
       <p>dcsssssssssssssssssssssssss c ds c sd c sd c sd ds ds s cds </p>
       <p>dcsssssssssssssssssssssssss c ds c sd c sd c sd ds ds s cds </p>
       <p>dcsssssssssssssssssssssssss c ds c sd c sd c sd ds ds s cds </p>
