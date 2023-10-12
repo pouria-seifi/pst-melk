@@ -11,15 +11,17 @@ interface ButtonProps {
   className?: string;
   href: string;
   children?: React.ReactNode;
-  type: Types;
+  type?: Types;
   icon?: React.ReactNode;
 }
 
 const buttonTypes = {
   primary:
-    "text-secondary bg-white py-1.5 px-2.5 flex items-center row w-44 justify-center rounded",
-  secondary: "",
-  thirdinary: "",
+    "text-secondary bg-white py-1.5 px-2.5 flex items-center row justify-center rounded",
+  secondary:
+    "text-secondary bg-white py-1.5 px-2.5 flex items-center row justify-center rounded border-1 rounded border-solid",
+  thirdinary:
+    "border-primary text-primary bg-white py-1.5 px-2.5 flex items-center row justify-center rounded border-1 rounded border-solid",
 };
 
 const Navigate: React.FC<ButtonProps> = ({
@@ -29,8 +31,22 @@ const Navigate: React.FC<ButtonProps> = ({
   type,
   icon,
 }) => {
+  if (type)
+    return (
+      <Link href={href} className={utils.classes(className, buttonTypes[type])}>
+        {icon ? (
+          <div className="flex items-center justify-between w-full">
+            ثبت اگهی ملک
+            {icon}
+          </div>
+        ) : (
+          children
+        )}
+      </Link>
+    );
+
   return (
-    <Link href={href} className={utils.classes(className, buttonTypes[type])}>
+    <Link href={href} className={className}>
       {icon ? (
         <div className="flex items-center justify-between w-full">
           ثبت اگهی ملک

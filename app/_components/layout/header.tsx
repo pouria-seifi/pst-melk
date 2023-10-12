@@ -1,11 +1,11 @@
 // Header.tsx
 import Image from "next/image";
 import React from "react";
-import Logo from "/public/pstLogo.svg";
-import PipLine from "/public/pipeLine.svg";
-import AddIcon from "/public/add-icon.svg";
-import Person from "/public/person.svg";
-import Hamburger from "/public/hamburger.svg";
+import Logo from "/public/images/pstLogo.svg";
+import PipLine from "/public/images/pipeLine.svg";
+import AddIcon from "/public/images/add-icon.svg";
+import Person from "/public/images/person.svg";
+import Hamburger from "/public/images/hamburger.svg";
 import Button from "../button/button";
 import Navigate from "../navigate/navigate";
 
@@ -44,7 +44,6 @@ const Header: React.FC = () => {
           <div className="hidden lg:flex">
             {menuItems.map((item) => (
               <Navigate
-                type="thirdinary"
                 key={item.name}
                 className="ml-7 text-white"
                 href={item.to}
@@ -59,12 +58,16 @@ const Header: React.FC = () => {
           <Navigate
             type="primary"
             href="/add"
-            className="ml-6"
+            className="ml-6 w-44"
             icon={<Image src={AddIcon} alt="" />}
           >
             ثبت اگهی ملک
           </Navigate>
-          <Button type="primary" icon={<Image src={Person} alt="" />}>
+          <Button
+            type="primary"
+            className="w-44"
+            icon={<Image src={Person} alt="" />}
+          >
             ورود به سیستم
           </Button>
         </div>

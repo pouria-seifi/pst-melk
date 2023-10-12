@@ -10,9 +10,10 @@
     "tw": "npx tailwindcss -i ./app/globals.css -o ./app/index.css --watch"
   },
   "dependencies": {
+    "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "13.5.4"
+    "react-select": "^5.7.7"
   },
   "devDependencies": {
     "typescript": "^5",
