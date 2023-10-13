@@ -583,8 +583,8 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.-mb-12 {
-  margin-bottom: -3rem;
+.-mb-80 {
+  margin-bottom: -20rem;
 }
 
 .-mr-4 {
@@ -619,22 +619,6 @@ video {
   margin-top: 0.75rem;
 }
 
-.-mb-40 {
-  margin-bottom: -10rem;
-}
-
-.-mb-52 {
-  margin-bottom: -13rem;
-}
-
-.-mb-96 {
-  margin-bottom: -24rem;
-}
-
-.-mb-80 {
-  margin-bottom: -20rem;
-}
-
 .block {
   display: block;
 }
@@ -647,28 +631,12 @@ video {
   display: none;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
-.min-h-\[50\%\] {
-  min-height: 50%;
-}
-
-.min-h-\[\] {
-  min-height: ;
-}
-
-.min-h-\[12rem\] {
-  min-height: 12rem;
-}
-
-.min-h-\[21rem\] {
-  min-height: 21rem;
-}
-
 .min-h-\[26rem\] {
   min-height: 26rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-2\/4 {
@@ -1270,6 +1238,10 @@ textarea {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:bg-dots {
     background-image: url(/images/dots.svg);
   }

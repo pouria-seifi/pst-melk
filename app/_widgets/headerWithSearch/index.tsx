@@ -46,7 +46,7 @@ export default function Header() {
 
   return (
     <section className="bg-header-bg-image-mobile md:bg-header-bg-image min-h-[26rem] bg-no-repeat bg-cover flex items-center justify-center py-16">
-      <div className="bg-white rounded-3xl py-12 px-12 w-auto mx-4 -mb-80">
+      <div className="bg-white rounded-3xl py-12 px-12 w-auto mx-4 -mb-80 md:mb-0">
         <div className="md:bg-dots bg-no-repeat bg-right-top bg-50">
           <h3 className="text-primary text-4xl font-bold text-center">
             پست ملک
