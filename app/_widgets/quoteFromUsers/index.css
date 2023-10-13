@@ -1,0 +1,66 @@
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    background-color: #E5E7EB;
+    width: 300px;
+    min-height: 340px;
+    padding: 32px 40px;
+    color: #9CA3AF;
+    border-radius: 24px;
+    transition: all ease-in-out .3s;
+    transition-property: background-color;
+}
+
+.swiper-slide-active {
+    background-color: #5780A4;
+    color: white;
+    z-index: 3 !important;
+}
+
+.swiper-slide-active .swiperComponentHeader::before {
+    content: "";
+    background-image: url('/images/nineDots.svg');
+    width: 50px;
+    /* Set the width of the image */
+    height: 50px;
+    /* Set the height of the image */
+    display: inline-block;
+    /* Display the image as an inline block */
+    background-size: cover;
+    /* Adjust the size as needed */
+    position: absolute;
+    /* Set the position to absolute */
+    top: 20px;
+    /* Adjust the top distance in pixels */
+    left: 20px;
+    /* Adjust the right distance in pixels */
+}
+
+
+
+@media(min-width:760px) {
+    .swiper-slide-prev {
+        margin-left: -150px !important;
+        margin-right: 170px !important;
+    }
+
+    .swiper-slide-next {
+        margin-left: 170px !important;
+        margin-right: -150px !important;
+    }
+}
+
+@media(max-width:760px) {
+    .swiper-slide {
+        padding: 1rem;
+    }
+
+    .swiper-slide-active .swiperComponentHeader::before {
+        width: 30px;
+        height: 30px;
+    }
+}

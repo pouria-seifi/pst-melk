@@ -35,6 +35,7 @@ export default function MostVisitedCities() {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 w-full">
         {cities.map((city) => (
           <Navigate
+            key={city.name}
             type="secondary"
             href={city.link}
             className="transition font-bold hover:bg-thirdinary hover:text-white hover:border-none"
