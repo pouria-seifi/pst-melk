@@ -18,6 +18,12 @@ const config: Config = {
       },
       borderWidth:{
         1:"1px"
+      },
+      minWidth: {
+        navigate:"320px"
+      },
+      boxShadow:{
+        sm : "0px 3px 100px 30px rgba(55, 65, 81, 0.08)"
       }
     },
     colors: {
