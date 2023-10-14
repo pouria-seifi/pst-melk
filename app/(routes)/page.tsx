@@ -3,6 +3,7 @@ import Header from "../_widgets/headerWithSearch";
 import MostVisitedCities from "../_widgets/mostVisitedCities";
 import QuoteFromUsers from "../_widgets/quoteFromUsers";
 import WhyPstMelk from "../_widgets/whyPstMelk";
+import Pocket from "../_widgets/pocket";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <MostVisitedCities />
       <WhyPstMelk />
       <QuoteFromUsers />
+      <Pocket />
     </Fragment>
   );
 }
