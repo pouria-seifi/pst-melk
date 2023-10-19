@@ -47,13 +47,9 @@ export default function WhyPstMelk() {
           ثبت آگهی ملک
         </Navigate>
       </div>
-      <Image
-        className="hidden lg:flex"
-        alt="home"
-        src={HomeImage}
-        width={1000}
-        height={100}
-      />
+      <div className="hidden lg:flex items-end">
+        <Image alt="home" src={HomeImage} width={1200} height={100} />
+      </div>
     </section>
   );
 }

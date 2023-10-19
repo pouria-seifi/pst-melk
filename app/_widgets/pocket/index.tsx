@@ -6,7 +6,7 @@ import Navigate from "@/app/_components/navigate/navigate";
 
 export default function Pocket() {
   return (
-    <section className="md:bg-gray1 rounded-2xl mt-28 flex items-center flex-col-reverse md:flex-row px-12 mx-4 md:mx-28">
+    <section className="md:bg-gray1 rounded-2xl mt-28 flex items-center flex-col-reverse lg:flex-row px-12 mx-4 md:mx-28">
       <div className="">
         <h3 className="justify-center md:justify-start text-center md:text-right text-xl font-bold md:text-5xl mb-2 flex text-gray6">
           بنگاه املاک در

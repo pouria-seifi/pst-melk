@@ -568,6 +568,14 @@ video {
   }
 }
 
+.relative {
+  position: relative;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -598,6 +606,10 @@ video {
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-44 {
@@ -644,6 +656,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-28 {
   margin-top: 7rem;
 }
@@ -680,12 +696,20 @@ video {
   min-height: 26rem;
 }
 
+.min-h-\[90px\] {
+  min-height: 90px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
 
 .w-2\/4 {
   width: 50%;
+}
+
+.w-40 {
+  width: 10rem;
 }
 
 .w-44 {
@@ -698,26 +722,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-60 {
-  width: 15rem;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
-.w-28 {
-  width: 7rem;
-}
-
-.w-12 {
-  width: 3rem;
-}
-
-.w-40 {
-  width: 10rem;
 }
 
 .max-w-\[183px\] {
@@ -740,8 +744,8 @@ video {
   flex-direction: column-reverse;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -754,6 +758,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-3 {
@@ -787,11 +795,6 @@ video {
 .border-primary {
   --tw-border-opacity: 1;
   border-color: rgb(3 133 244 / var(--tw-border-opacity));
-}
-
-.bg-gray1 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-primary {
@@ -840,10 +843,6 @@ video {
 
 .p-24 {
   padding: 6rem;
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .p-8 {
@@ -928,14 +927,14 @@ video {
   line-height: 1;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -989,29 +988,85 @@ video {
   transition-duration: 150ms;
 }
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: IRANSans;
+
+  /* Name to reference the font */
+
+  src: url('/fonts/iran-sans/IRANSansWeb.eot');
+
+  src: url('/fonts/iran-sans/IRANSansWeb.eot') format('embedded-opentype'),
+    url('/fonts/iran-sans/IRANSansWeb.woff2') format('woff2'),
+    url('/fonts/iran-sans/IRANSansWeb.woff') format('woff'),
+    url('/fonts/iran-sans/IRANSansWeb.ttf') format('truetype');
+
+  /* Specify the font file path and format */
+
+  font-weight: normal;
+
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: IRANSans;
+
+  /* Name to reference the font */
+
+  src: url('/fonts/iran-sans/IRANSansWeb_Light.eot');
+
+  src: url('/fonts/iran-sans/IRANSansWeb_Light.eot') format('embedded-opentype'),
+    url('/fonts/iran-sans/IRANSansWeb_Light.woff2') format('woff2'),
+    url('/fonts/iran-sans/IRANSansWeb_Light.woff') format('woff'),
+    url('/fonts/iran-sans/IRANSansWeb_Light.ttf') format('truetype');
+
+  /* Specify the font file path and format */
+
+  font-weight: light;
+
+  font-style: light;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+@font-face {
+  font-family: IRANSans;
+
+  /* Name to reference the font */
+
+  src: url('/fonts/iran-sans/IRANSansWeb_Medium.eot');
+
+  src: url('/fonts/iran-sans/IRANSansWeb_Medium.eot') format('embedded-opentype'),
+    url('/fonts/iran-sans/IRANSansWeb_Medium.woff2') format('woff2'),
+    url('/fonts/iran-sans/IRANSansWeb_Medium.woff') format('woff'),
+    url('/fonts/iran-sans/IRANSansWeb_Medium.ttf') format('truetype');
+
+  /* Specify the font file path and format */
+
+  font-weight: medium;
+
+  font-style: medium;
+}
+
+@font-face {
+  font-family: IRANSans;
+
+  /* Name to reference the font */
+
+  src: url('/fonts/iran-sans/IRANSansWeb_Bold.eot');
+
+  src: url('/fonts/iran-sans/IRANSansWeb_Bold.eot') format('embedded-opentype'),
+    url('/fonts/iran-sans/IRANSansWeb_Bold.woff2') format('woff2'),
+    url('/fonts/iran-sans/IRANSansWeb_Bold.woff') format('woff'),
+    url('/fonts/iran-sans/IRANSansWeb_Bold.ttf') format('truetype');
+
+  /* Specify the font file path and format */
+
+  font-weight: bold;
+
+  font-style: bold;
+}
+
+body, html {
+  font-family: IRANSans !important;
+}
 
 /* reset css */
 
@@ -1412,15 +1467,16 @@ textarea {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) and (max-width: 767px) {
+  .sm\:min-h-\[120px\] {
+    min-height: 120px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
   .md\:mx-28 {
     margin-left: 7rem;
     margin-right: 7rem;
-  }
-
-  .md\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
   }
 
   .md\:mb-0 {
@@ -1431,20 +1487,24 @@ textarea {
     margin-left: 0.75rem;
   }
 
+  .md\:ml-auto {
+    margin-left: auto;
+  }
+
   .md\:mr-0 {
     margin-right: 0px;
   }
 
-  .md\:ml-auto {
-    margin-left: auto;
+  .md\:min-h-\[150px\] {
+    min-height: 150px;
   }
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .md\:flex-row {
-    flex-direction: row;
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:justify-start {
@@ -1498,7 +1558,7 @@ textarea {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
   .lg\:flex {
     display: flex;
   }
@@ -1509,5 +1569,9 @@ textarea {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 }

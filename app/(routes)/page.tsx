@@ -4,6 +4,7 @@ import MostVisitedCities from "../_widgets/mostVisitedCities";
 import QuoteFromUsers from "../_widgets/quoteFromUsers";
 import WhyPstMelk from "../_widgets/whyPstMelk";
 import Pocket from "../_widgets/pocket";
+import SuggestedPages from "../_widgets/suggestedPages";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <WhyPstMelk />
       <QuoteFromUsers />
       <Pocket />
+      <SuggestedPages />
     </Fragment>
   );
 }
