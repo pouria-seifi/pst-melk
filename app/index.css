@@ -588,6 +588,10 @@ video {
   margin: 1.25rem;
 }
 
+.-m-5 {
+  margin: -1.25rem;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -690,6 +694,22 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -804,6 +824,10 @@ video {
   gap: 0.75rem;
 }
 
+.gap-7 {
+  gap: 1.75rem;
+}
+
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -908,6 +932,10 @@ video {
   padding: 2rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -975,6 +1003,10 @@ video {
 
 .pt-16 {
   padding-top: 4rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .text-center {
@@ -1572,6 +1604,10 @@ textarea {
 
 .group:focus .group-focus\:visible {
   visibility: visible;
+}
+
+.group:focus .group-focus\:mt-2 {
+  margin-top: 0.5rem;
 }
 
 .group:focus .group-focus\:max-h-screen {
