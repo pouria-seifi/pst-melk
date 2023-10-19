@@ -6,6 +6,7 @@ import WhyPstMelk from "../_widgets/whyPstMelk";
 import Pocket from "../_widgets/pocket";
 import SuggestedPages from "../_widgets/suggestedPages";
 import Strongest from "../_widgets/strongest";
+import FAQ from "../_widgets/faq";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Pocket />
       <SuggestedPages />
       <Strongest />
+      <FAQ />
     </Fragment>
   );
 }
