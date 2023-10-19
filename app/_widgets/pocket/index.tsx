@@ -10,7 +10,7 @@ export default function Pocket() {
       <div className="">
         <h3 className="justify-center md:justify-start text-center md:text-right text-xl font-bold md:text-5xl mb-2 flex text-gray6">
           بنگاه املاک در
-          <span className="text-primary px-2">جیب</span>
+          <strong className="text-primary px-2">جیب</strong>
           شماست!
         </h3>
         <p className="mb-5 text-sm md:text-base text-center md:text-right">

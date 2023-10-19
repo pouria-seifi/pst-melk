@@ -36,7 +36,7 @@ export default function SuggestedPages() {
       <h5 className="text-gray4 mt-2 mb-4">
         دسترسی آسان به صفحات آگهی املاک پر بازدید پست ملک
       </h5>
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-2 md:gap-4 w-full">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 w-full">
         {suggests.map((item) => (
           <Navigate
             key={item.title}

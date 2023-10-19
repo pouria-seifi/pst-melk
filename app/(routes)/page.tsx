@@ -5,6 +5,7 @@ import QuoteFromUsers from "../_widgets/quoteFromUsers";
 import WhyPstMelk from "../_widgets/whyPstMelk";
 import Pocket from "../_widgets/pocket";
 import SuggestedPages from "../_widgets/suggestedPages";
+import Strongest from "../_widgets/strongest";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <QuoteFromUsers />
       <Pocket />
       <SuggestedPages />
+      <Strongest />
     </Fragment>
   );
 }

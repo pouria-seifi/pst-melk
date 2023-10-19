@@ -26,18 +26,18 @@ const config: Config = {
         sm : "0px 3px 100px 30px rgba(55, 65, 81, 0.08)"
       },
       fontFamily: {
-        IRANSans: ['iranSans'],
+        IRANSans: ['IRANSans'],
         sonnat: ['var(--font-sonnat)'],
       }
     },
-    screens:{
-      'xs': { 'max': '640px'},
-      'sm': {'min': '640px', 'max': '767px'},
-      'md': {'min': '768px', 'max': '1023px'},
-      'lg': {'min': '1024px', 'max': '1279px'},
-      'xl': {'min': '1280px', 'max': '1535px'},
-      '2xl': {'min': '1536px'},
-    },
+    // screens:{
+    //   'xs': { 'max': '640px'},
+    //   'sm': {'min': '640px', 'max': '767px'},
+    //   'md': {'min': '768px', 'max': '1023px'},
+    //   'lg': {'min': '1024px', 'max': '1279px'},
+    //   'xl': {'min': '1280px', 'max': '1535px'},
+    //   '2xl': {'min': '1536px'},
+    // },
     colors: {
       'primary': '#0385F4',
       'secondary': '#222338',
