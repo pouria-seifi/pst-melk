@@ -1,0 +1,27 @@
+.contact::before {
+    content: "";
+    background-image: url('/images/nine-dots-primary-color.svg');
+    width: 40px;
+    /* Set the width of the image */
+    height: 40px;
+    /* Set the height of the image */
+    display: inline-block;
+    /* Display the image as an inline block */
+    background-size: cover;
+    /* Adjust the size as needed */
+    position: absolute;
+    /* Set the position to absolute */
+    top: 32px;
+    /* Adjust the top distance in pixels */
+    left: 32px;
+    /* Adjust the right distance in pixels */
+}
+
+@media (max-width : 360px) {
+    .contact::before {
+        width: 20px;
+        height: 20px;
+        top: 20px;
+        left: 20px;
+    }
+}

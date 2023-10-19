@@ -580,18 +580,6 @@ video {
   z-index: 10;
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
-.m-5 {
-  margin: 1.25rem;
-}
-
-.-m-5 {
-  margin: -1.25rem;
-}
-
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -610,6 +598,11 @@ video {
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .-mb-80 {
@@ -692,28 +685,32 @@ video {
   margin-top: 1rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-
-.mt-7 {
-  margin-top: 1.75rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .mt-8 {
   margin-top: 2rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -732,6 +729,10 @@ video {
   height: auto;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .max-h-0 {
   max-height: 0px;
 }
@@ -746,14 +747,6 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-\[\] {
-  min-height: ;
-}
-
-.min-h-\[100px\] {
-  min-height: 100px;
 }
 
 .w-2\/4 {
@@ -792,6 +785,10 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -822,16 +819,6 @@ video {
 
 .gap-3 {
   gap: 0.75rem;
-}
-
-.gap-7 {
-  gap: 1.75rem;
-}
-
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -924,16 +911,12 @@ video {
   padding: 6rem;
 }
 
-.p-5 {
-  padding: 1.25rem;
+.p-6 {
+  padding: 1.5rem;
 }
 
 .p-8 {
   padding: 2rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
 }
 
 .px-12 {
@@ -1005,10 +988,6 @@ video {
   padding-top: 4rem;
 }
 
-.pb-3 {
-  padding-bottom: 0.75rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1040,6 +1019,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold {
@@ -1103,18 +1087,6 @@ video {
 
 .transition-all {
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-opacity {
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-transform {
-  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1614,30 +1586,9 @@ textarea {
   max-height: 100vh;
 }
 
-.group:focus .group-focus\:max-h-11 {
-  max-height: 2.75rem;
-}
-
-.group:focus .group-focus\:min-h-screen {
-  min-height: 100vh;
-}
-
-.group:focus .group-focus\:min-h-\[\] {
-  min-height: ;
-}
-
-.group:focus .group-focus\:min-h-\[100px\] {
-  min-height: 100px;
-}
-
 .group:focus .group-focus\:-rotate-180 {
   --tw-rotate: -180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group:focus .group-focus\:bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(3 133 244 / var(--tw-bg-opacity));
 }
 
 .group:focus .group-focus\:bg-thirdinary {
@@ -1645,21 +1596,8 @@ textarea {
   background-color: rgb(87 128 164 / var(--tw-bg-opacity));
 }
 
-.group:focus .group-focus\:bg-\[\#3E6F99\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(62 111 153 / var(--tw-bg-opacity));
-}
-
-.group:focus .group-focus\:bg-\[3E6F99\] {
-  background-color: 3E6F99;
-}
-
 .group:focus .group-focus\:fill-white {
   fill: #FFFFFF;
-}
-
-.group:focus .group-focus\:p-5 {
-  padding: 1.25rem;
 }
 
 .group:focus .group-focus\:text-white {
@@ -1685,6 +1623,11 @@ textarea {
   .md\:mx-28 {
     margin-left: 7rem;
     margin-right: 7rem;
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .md\:mb-0 {
@@ -1751,6 +1694,11 @@ textarea {
     padding-bottom: 3rem;
   }
 
+  .md\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
   .md\:text-right {
     text-align: right;
   }
@@ -1791,5 +1739,10 @@ textarea {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
