@@ -17,7 +17,7 @@
     /* Adjust the right distance in pixels */
 }
 
-@media (max-width : 360px) {
+@media (max-width : 768px) {
     .contact::before {
         width: 20px;
         height: 20px;
