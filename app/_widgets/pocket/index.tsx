@@ -7,13 +7,13 @@ import Navigate from "@/app/_components/navigate/navigate";
 export default function Pocket() {
   return (
     <section className="md:bg-gray1 rounded-2xl mt-28 flex items-center flex-col-reverse lg:flex-row px-12 mx-4 md:mx-40">
-      <div className="">
-        <h3 className="justify-center md:justify-start text-center md:text-right text-xl font-bold md:text-3xl mb-2 flex text-gray6">
+      <div className="mb-4">
+        <h3 className="justify-center md:justify-start text-center md:text-right text-2xl font-bold md:text-3xl mb-2 flex text-gray6">
           بنگاه املاک در
           <strong className="text-primary px-2">جیب</strong>
           شماست!
         </h3>
-        <p className="mb-5 text-sm md:text-base text-center md:text-right">
+        <p className="mb-5 text-sm font-medium md:text-base text-center md:text-right">
           با نرم افزار هوشمند املاک پست ملک ، تمام فایل‌های املاک شما به صورت
           منظم و دسته‌بندی شده، در‌جیب‌تان قرار دارد! با پست ملک‌ می‌توانید تمام
           امرور مربوط به اجاره یا فروش ملک‌های خود از ثبت تقاضای مشتری تا صدور
@@ -22,10 +22,12 @@ export default function Pocket() {
         <Navigate
           type="quaterdinary"
           href="/"
-          icon={<Image src={WhiteArrowLeft} alt="" />}
-          className="w-40 mt-6 mx-auto md:mr-0 md:ml-auto"
+          icon={
+            <Image className="hidden md:flex" src={WhiteArrowLeft} alt="" />
+          }
+          className="w-40 md:w-56 h-12 mt-6 mx-auto md:mr-0 md:ml-auto"
         >
-          ثبت آگهی ملک
+          ورود به نرم‌افزار املاک
         </Navigate>
       </div>
       <Image

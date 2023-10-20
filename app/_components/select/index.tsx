@@ -34,7 +34,7 @@ const SelectWithSearch: React.FC<SelectWithSearchProps> = ({
   const customStyles = {
     indicatorsContainer: (provided: any) => ({
       ...provided,
-      marginLeft: "-18px",
+      // marginLeft: "-18px",
     }),
     control: (provided: any) => ({
       ...provided,

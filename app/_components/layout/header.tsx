@@ -29,7 +29,7 @@ const menuItems = [
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-primary py-4 px-5">
+    <header className="bg-primary py-4 px-5 text-xs">
       <nav className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <Image width={40} height={40} src={Logo} alt="logo" />

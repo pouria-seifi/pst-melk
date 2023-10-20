@@ -7,8 +7,8 @@ import Navigate from "@/app/_components/navigate/navigate";
 export default function WhyPstMelk() {
   return (
     <section className="bg-thirdinary mt-28 flex row px-4 md:px-40 pt-16">
-      <div className="text-white mb-9">
-        <h3 className="font-bold text-5xl mb-2">چرا پست ‌ملک؟</h3>
+      <div className="text-white text-sm font-medium mb-9">
+        <h3 className="font-bold text-4xl mb-5">چرا پست ‌ملک؟</h3>
         <p className="mb-5">
           چه به دنبال خرید یا اجاره خانه باشید و چه قصد شما فروش خانه باشد، پست
           ملک این امکان را برای شما فراهم کرده که این دو کار را در بستری رایگان
@@ -42,7 +42,7 @@ export default function WhyPstMelk() {
           type="thirdinary"
           href="/"
           icon={<Image src={ArrowLeft} alt="" />}
-          className="max-w-[183px] mt-6"
+          className="max-w-[183px] h-12 mt-6"
         >
           ثبت آگهی ملک
         </Navigate>

@@ -48,13 +48,13 @@ export default function Header() {
     <section className="bg-header-bg-image-mobile md:bg-header-bg-image min-h-[26rem] bg-no-repeat bg-cover flex items-center justify-center py-16 mb-44 md:mb-0">
       <div className="bg-white shadow-sm rounded-3xl py-7 md:py-12 px-10 md:px-16 w-auto mx-4 -mb-80 md:mb-0">
         <div className="md:bg-dots bg-no-repeat bg-right-top bg-50">
-          <h3 className="text-primary text-4xl font-bold text-center">
+          <h3 className="text-primary text-3xl font-bold text-center">
             پست ملک
           </h3>
-          <h3 className="text-4xl font-bold text-center my-2">
+          <h3 className="text-3xl font-bold text-center my-2">
             سامانه حرفه‌ای املاک
           </h3>
-          <span className="block text-gray4 font-medium text-xl text-center mb-5">
+          <span className="block text-gray4 font-medium text-sm text-center mb-5">
             انتخاب اول جستجوی املاک، با سرعت و دقت بالا
           </span>
           <Select
@@ -68,7 +68,7 @@ export default function Header() {
             <Navigate href="/" type="secondary" className="ml-1 md:ml-3 w-2/4">
               املاک تهران
             </Navigate>
-            <Navigate href="/" type="thirdinary" className="w-2/4">
+            <Navigate href="/" type="quaterdinary" className="w-2/4">
               ثبت آگهی ملک
             </Navigate>
           </div>

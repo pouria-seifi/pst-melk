@@ -785,6 +785,14 @@ video {
   width: 100%;
 }
 
+.w-56 {
+  width: 14rem;
+}
+
+.w-28 {
+  width: 7rem;
+}
+
 .min-w-\[\] {
   min-width: ;
 }
@@ -1109,6 +1117,11 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -1745,8 +1758,16 @@ textarea {
     margin-top: 7rem;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:min-h-\[150px\] {
     min-height: 150px;
+  }
+
+  .md\:w-56 {
+    width: 14rem;
   }
 
   .md\:min-w-\[550px\] {
@@ -1767,6 +1788,10 @@ textarea {
 
   .md\:gap-4 {
     gap: 1rem;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
   }
 
   .md\:bg-gray1 {

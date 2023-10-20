@@ -38,7 +38,7 @@ const Navigate: React.FC<ButtonProps> = ({
       <Link href={href} className={utils.classes(className, buttonTypes[type])}>
         {icon ? (
           <div className="flex items-center justify-between w-full">
-            ثبت اگهی ملک
+            {children}
             {icon}
           </div>
         ) : (
@@ -51,7 +51,7 @@ const Navigate: React.FC<ButtonProps> = ({
     <Link href={href} className={className}>
       {icon ? (
         <div className="flex items-center justify-between w-full">
-          ثبت اگهی ملک
+          {children}
           {icon}
         </div>
       ) : (
