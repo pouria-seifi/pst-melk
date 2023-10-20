@@ -6,7 +6,7 @@ import Navigate from "@/app/_components/navigate/navigate";
 
 export default function WhyPstMelk() {
   return (
-    <section className="bg-thirdinary mt-28 flex row px-4 md:px-28 pt-16">
+    <section className="bg-thirdinary mt-28 flex row px-4 md:px-40 pt-16">
       <div className="text-white mb-9">
         <h3 className="font-bold text-5xl mb-2">چرا پست ‌ملک؟</h3>
         <p className="mb-5">

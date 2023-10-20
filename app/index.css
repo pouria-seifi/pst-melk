@@ -649,6 +649,10 @@ video {
   margin-left: 0.25rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .ml-6 {
   margin-left: 1.5rem;
 }
@@ -667,6 +671,10 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .mt-2 {
@@ -697,20 +705,12 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .mt-7 {
   margin-top: 1.75rem;
 }
 
-.mt-14 {
-  margin-top: 3.5rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -719,6 +719,10 @@ video {
 
 .inline-block {
   display: inline-block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -741,8 +745,8 @@ video {
   height: 100%;
 }
 
-.h-4 {
-  height: 1rem;
+.h-12 {
+  height: 3rem;
 }
 
 .max-h-0 {
@@ -781,28 +785,32 @@ video {
   width: 100%;
 }
 
-.w-4 {
-  width: 1rem;
+.min-w-\[\] {
+  min-width: ;
+}
+
+.min-w-\[400px\] {
+  min-width: 400px;
+}
+
+.min-w-\[500px\] {
+  min-width: 500px;
+}
+
+.min-w-\[5px\] {
+  min-width: 5px;
+}
+
+.min-w-\[550px\] {
+  min-width: 550px;
 }
 
 .max-w-\[183px\] {
   max-width: 183px;
 }
 
-.max-w-\[\] {
-  max-width: ;
-}
-
 .max-w-\[500px\] {
   max-width: 500px;
-}
-
-.max-w-\[100px\] {
-  max-width: 100px;
-}
-
-.max-w-\[300px\] {
-  max-width: 300px;
 }
 
 .cursor-pointer {
@@ -881,6 +889,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -889,12 +901,8 @@ video {
   border-width: 1px;
 }
 
-.border-b {
-  border-bottom-width: 1px;
-}
-
-.border-b-1 {
-  border-bottom-width: 1px;
+.border-2 {
+  border-width: 2px;
 }
 
 .border-solid {
@@ -906,9 +914,14 @@ video {
   border-color: rgb(3 133 244 / var(--tw-border-opacity));
 }
 
-.border-gray6 {
+.border-gray3 {
   --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity));
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.border-gray2 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .bg-gray1 {
@@ -1037,12 +1050,17 @@ video {
   padding-bottom: 2rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pb-7 {
   padding-bottom: 1.75rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-center {
@@ -1083,6 +1101,16 @@ video {
   line-height: 1rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1093,6 +1121,11 @@ video {
 
 .font-normal {
   font-weight: 400;
+}
+
+.text-gray2 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .text-gray4 {
@@ -1118,11 +1151,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray2 {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1692,6 +1720,11 @@ textarea {
     margin-right: auto;
   }
 
+  .md\:mx-40 {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1714,6 +1747,14 @@ textarea {
 
   .md\:min-h-\[150px\] {
     min-height: 150px;
+  }
+
+  .md\:min-w-\[550px\] {
+    min-width: 550px;
+  }
+
+  .md\:min-w-\[450px\] {
+    min-width: 450px;
   }
 
   .md\:grid-cols-3 {
@@ -1746,6 +1787,11 @@ textarea {
     padding-right: 3rem;
   }
 
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .md\:px-28 {
     padding-left: 7rem;
     padding-right: 7rem;
@@ -1754,6 +1800,16 @@ textarea {
   .md\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .md\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .md\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   .md\:text-right {
@@ -1779,6 +1835,11 @@ textarea {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1788,6 +1849,10 @@ textarea {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:min-w-\[550px\] {
+    min-width: 550px;
   }
 
   .lg\:grid-cols-4 {

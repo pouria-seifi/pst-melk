@@ -9,6 +9,7 @@ interface SelectWithSearchProps {
   onChange: (selectedOption: { label: string; value: string } | null) => void;
   onInputChange?: any;
   menuIsOpen?: boolean;
+  classname?: string;
 }
 
 const SelectWithSearch: React.FC<SelectWithSearchProps> = ({
@@ -16,6 +17,7 @@ const SelectWithSearch: React.FC<SelectWithSearchProps> = ({
   onChange,
   onInputChange,
   menuIsOpen,
+  classname,
 }) => {
   const DropdownIndicator = (props: any) => {
     return (
@@ -47,7 +49,7 @@ const SelectWithSearch: React.FC<SelectWithSearchProps> = ({
   };
 
   return (
-    <div className="">
+    <div className={classname}>
       <Select
         options={options}
         onChange={onChange}

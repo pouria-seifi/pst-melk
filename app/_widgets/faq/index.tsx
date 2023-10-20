@@ -47,7 +47,7 @@ const faqQuestions = [
 
 export default function FAQ() {
   return (
-    <section className="flex items-center flex-col px-4 md:px-28">
+    <section className="flex items-center flex-col px-4 md:px-40">
       <div className="w-full mt-8">
         <h3 className="text-center">سوالات متداول</h3>
         {faqQuestions.map((item, index) => (

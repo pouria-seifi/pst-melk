@@ -21,7 +21,7 @@ const cities = [
 
 export default function MostVisitedCities() {
   return (
-    <section className="flex items-center flex-col px-4 md:px-28">
+    <section className="flex items-center flex-col px-4 md:px-40">
       <Image
         className="mt-4"
         width={32}
@@ -38,7 +38,7 @@ export default function MostVisitedCities() {
             key={city.name}
             type="secondary"
             href={city.link}
-            className="transition font-bold hover:bg-thirdinary hover:text-white hover:border-none"
+            className="h-12 transition border-gray2 rounded-xl font-bold hover:bg-thirdinary hover:text-white hover:border-none border-2"
           >
             {city.name}
           </Navigate>

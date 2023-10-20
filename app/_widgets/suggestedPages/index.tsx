@@ -29,7 +29,7 @@ const suggests = [
 
 export default function SuggestedPages() {
   return (
-    <section className="flex items-center flex-col mt-20 px-4 md:px-28">
+    <section className="flex items-center flex-col mt-20 px-4 md:px-40">
       <h3 className="font-iran-sans text-gray4 font-bold mt-4 text-2xl text-center">
         صفحات پیشنهادی پست ملک
       </h3>

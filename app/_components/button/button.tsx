@@ -26,7 +26,7 @@ const Button: React.FC<ButtonProps> = ({ className, children, type, icon }) => {
     <button className={utils.classes(className, buttonTypes[type])}>
       {icon ? (
         <div className="flex items-center justify-between w-full">
-          ثبت اگهی ملک
+          {children}
           {icon}
         </div>
       ) : (
