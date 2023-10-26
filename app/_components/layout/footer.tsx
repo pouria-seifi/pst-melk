@@ -11,7 +11,7 @@ import CopyWrite from "/public/images/copy-write.svg";
 
 const Footer: React.FC = () => {
   return (
-    <section className="bg-secondary flex flex-col items-center justify-center pb-7">
+    <section className="bg-secondary flex flex-col items-center justify-center pb-7 px-7 md:px-0">
       <div className="flex flex-col items-center max-w-[500px]">
         <Image className="mt-4" width={40} height={40} src={Logo} alt="logo" />
         <a
@@ -26,34 +26,43 @@ const Footer: React.FC = () => {
             alt=""
           />
         </a>
-        <p className="text-gray2 text-center text-xs font-medium">
+        <p className="text-gray2 text-justify text-xs font-medium leading-5">
           از امروز، رایگان حرفه‌ای کار کنید با قابلیت گروه‌بندی رنج برای کنترل
           دسترسی مشاوران با قابلیت ثبت متقاضی و تطبیق با املاک ثبت شده فیلترینگ
           بی‌نظیر برای جستجوی حرفه‌ای املاک همیشه در دسترس با امنیت فوق‌العاده
           با قابلیت جستجوی نقشه
         </p>
-        <div className="flex flex-row items-center justify-center mt-14">
-          <Navigate href="/" className="text-gray2 font-medium text-sm">
+        <div className="flex flex-col md:flex-row items-center justify-center mt-14">
+          <Navigate
+            href="/"
+            className="text-gray2 mb-5 md:mb-0 font-medium text-sm"
+          >
             دربارهٔ پست ملک
           </Navigate>
           <Image
-            className="hidden lg:flex mr-10 ml-8"
+            className="hidden md:flex mr-10 ml-8"
             width={0}
             height={32}
             src={PipLine}
             alt="pipe"
           />
-          <Navigate href="/" className="text-gray2 font-medium text-sm">
+          <Navigate
+            href="/"
+            className="text-gray2 mb-5 md:mb-0 md:px-4 font-medium text-sm"
+          >
             پشتیبانی و قوانین
           </Navigate>
           <Image
-            className="hidden lg:flex mr-10 ml-8"
+            className="hidden md:flex mr-10 ml-8"
             width={0}
             height={32}
             src={PipLine}
             alt="pipe"
           />
-          <Navigate href="/" className="text-gray2 font-medium text-sm">
+          <Navigate
+            href="/"
+            className="text-gray2 mb-5 md:mb-0 font-medium text-sm"
+          >
             بلاگ پست ملک
           </Navigate>
         </div>

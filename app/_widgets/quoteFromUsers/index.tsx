@@ -78,7 +78,7 @@ export default function QuoteFromUsers() {
               </h3>
               <span className="mb-6 mt-2">{quote.registeryDate}</span>
             </div>
-            <div>{quote.userQuote}</div>
+            <div className="text-justify">{quote.userQuote}</div>
           </div>
         ))}
       />

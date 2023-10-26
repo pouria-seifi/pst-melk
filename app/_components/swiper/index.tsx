@@ -39,7 +39,7 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({
         modules={[EffectCoverflow, Pagination, Autoplay]}
         className="mySwiper"
         autoplay={{
-          delay: 30000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         loop

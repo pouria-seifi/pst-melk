@@ -6,8 +6,8 @@ import Navigate from "@/app/_components/navigate/navigate";
 
 export default function WhyPstMelk() {
   return (
-    <section className="bg-thirdinary mt-28 flex row px-4 md:px-40 pt-16">
-      <div className="text-white text-sm font-medium mb-9">
+    <section className="bg-thirdinary mt-28 flex row px-4 md:px-56 pt-16">
+      <div className="text-white text-sm font-medium mb-9 text-justify">
         <h3 className="font-bold text-4xl mb-5">چرا پست ‌ملک؟</h3>
         <p className="mb-5">
           چه به دنبال خرید یا اجاره خانه باشید و چه قصد شما فروش خانه باشد، پست
@@ -19,22 +19,22 @@ export default function WhyPstMelk() {
         </p>
 
         <ul className="list-disc">
-          <li className="mb-2">
+          <li className="mb-2 mr-5">
             جستجوی حرفه‌ای ملک از طریق لیست فایل‌های منتشرشده و همچنین از روی
             نقشه
           </li>
-          <li className="mb-2">
+          <li className="mb-2 mr-5">
             آگاهی از قیمت ملک و زمین در صفحات اختصاصی و از روی نقشه و همچنین،
             مشاهده‌ی چگونگی پراکندگی قیمت در مناطق مختلف
           </li>
-          <li className="mb-2">
+          <li className="mb-2 mr-5">
             فیلترهای متنوع برای جستجوی هدفمند انواع ملک در سراسر ایران
           </li>
-          <li className="mb-2">
+          <li className="mb-2 mr-5">
             امکانِ ثبت آگهی رایگان برای فروش و اجاره آپارتمان، زمین، دفتر کار و
             ساختمان تجاری
           </li>
-          <li className="mb-2">
+          <li className="mb-2 mr-5">
             ثبتِ آسان و رایگان آگهی با امکانِ درج مشخصات کامل و بدون محدودیت
           </li>
         </ul>

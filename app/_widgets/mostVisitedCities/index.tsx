@@ -21,7 +21,7 @@ const cities = [
 
 export default function MostVisitedCities() {
   return (
-    <section className="flex items-center flex-col px-4 md:px-40">
+    <section className="flex items-center flex-col px-4 md:px-56">
       <Image
         className="mt-4"
         width={32}

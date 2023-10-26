@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Strongest() {
   return (
-    <section className="bg-gray1 rounded-2xl mt-10 md:mt-28 flex items-center flex-col px-8 md:px-12 py-8 mx-4 md:mx-40">
+    <section className="bg-gray1 rounded-2xl mt-10 md:mt-28 flex items-center flex-col px-8 md:px-12 py-8 mx-4 md:mx-56">
       <h3 className="justify-center md:justify-start text-center md:text-right text-xl font-bold md:text-2xl mb-2 flex text-gray6">
         قوی‌ترین سیستم املاک در پست ملک
       </h3>

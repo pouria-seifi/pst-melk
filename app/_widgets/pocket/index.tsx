@@ -6,14 +6,14 @@ import Navigate from "@/app/_components/navigate/navigate";
 
 export default function Pocket() {
   return (
-    <section className="md:bg-gray1 rounded-2xl mt-28 flex items-center flex-col-reverse lg:flex-row px-12 mx-4 md:mx-40">
+    <section className="md:bg-gray1 rounded-2xl mt-28 flex items-center flex-col-reverse lg:flex-row px-12 mx-4 md:mx-56">
       <div className="mb-4">
-        <h3 className="justify-center md:justify-start text-center md:text-right text-2xl font-bold md:text-3xl mb-2 flex text-gray6">
+        <h3 className="justify-center whitespace-nowrap md:justify-start text-center md:text-right text-2xl font-bold md:text-3xl mb-2 flex text-gray6">
           بنگاه املاک در
           <strong className="text-primary px-2">جیب</strong>
           شماست!
         </h3>
-        <p className="mb-5 text-sm font-medium md:text-base text-center md:text-right">
+        <p className="mb-5 text-justify text-sm font-medium md:text-base md:text-right">
           با نرم افزار هوشمند املاک پست ملک ، تمام فایل‌های املاک شما به صورت
           منظم و دسته‌بندی شده، در‌جیب‌تان قرار دارد! با پست ملک‌ می‌توانید تمام
           امرور مربوط به اجاره یا فروش ملک‌های خود از ثبت تقاضای مشتری تا صدور
