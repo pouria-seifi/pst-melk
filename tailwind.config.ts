@@ -14,7 +14,8 @@ const config: Config = {
         'dots': 'url(/images/dots.svg)',
       },
       backgroundSize: {
-        "50":"50px"
+        "50":"50px",
+        "60":"60px"
       },
       borderWidth:{
         1:"1px"

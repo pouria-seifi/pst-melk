@@ -44,7 +44,7 @@ const Header: React.FC = () => {
             {menuItems.map((item) => (
               <Navigate
                 key={item.name}
-                className="ml-7 text-white"
+                className="ml-3 text-white"
                 href={item.to}
               >
                 {item.name}

@@ -46,8 +46,8 @@ export default function Header() {
 
   return (
     <section className="bg-header-bg-image-mobile md:bg-header-bg-image min-h-[26rem] bg-no-repeat bg-cover flex items-center justify-center py-16 mb-44 md:mb-0">
-      <div className="bg-white shadow-sm rounded-3xl py-7 md:py-12 px-10 md:px-16 w-auto mx-4 -mb-80 md:mb-0">
-        <div className="md:bg-dots bg-no-repeat bg-right-top bg-50">
+      <div className="md:bg-dots bg-no-repeat bg-[position:94%_10%] bg-50 lg:bg-60 bg-white shadow-sm rounded-3xl py-7 md:py-12 px-10 md:px-16 w-auto mx-4 -mb-80 md:mb-0">
+        <div className="">
           <h3 className="text-primary text-3xl font-bold text-center">
             پست ملک
           </h3>
@@ -62,7 +62,8 @@ export default function Header() {
             options={selectedOptions}
             onChange={handleDropdownChange}
             onInputChange={onInputChange}
-            classname="md:min-w-[450px] lg:min-w-[550px]"
+            classname="md:min-w-[470px]"
+            styles={{ height: "45px" }}
           />
           <div className="flex row mt-3">
             <Navigate href="/" type="secondary" className="ml-1 md:ml-3 w-2/4">

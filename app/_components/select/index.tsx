@@ -10,6 +10,7 @@ interface SelectWithSearchProps {
   onInputChange?: any;
   menuIsOpen?: boolean;
   classname?: string;
+  styles?: object;
 }
 
 const SelectWithSearch: React.FC<SelectWithSearchProps> = ({
@@ -18,13 +19,14 @@ const SelectWithSearch: React.FC<SelectWithSearchProps> = ({
   onInputChange,
   menuIsOpen,
   classname,
+  styles,
 }) => {
   const DropdownIndicator = (props: any) => {
     return (
       components.DropdownIndicator && (
         <components.DropdownIndicator {...props}>
           <div className="bg-secondary rounded p-2 -mr-4">
-            <Image alt="" src={SearchIcon} />
+            <Image height={15} width={15} alt="" src={SearchIcon} />
           </div>
         </components.DropdownIndicator>
       )
@@ -34,6 +36,7 @@ const SelectWithSearch: React.FC<SelectWithSearchProps> = ({
   const customStyles = {
     indicatorsContainer: (provided: any) => ({
       ...provided,
+      ...styles,
       // marginLeft: "-18px",
     }),
     control: (provided: any) => ({
