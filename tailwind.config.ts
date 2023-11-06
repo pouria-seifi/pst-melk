@@ -12,10 +12,12 @@ const config: Config = {
         'header-bg-image': 'url(/images/header-bg-image.svg)',
         'header-bg-image-mobile': 'url(/images/header-bg-image-mobile.svg)',
         'dots': 'url(/images/dots.svg)',
+        'circle': 'url(/images/circle-bg.svg)',
       },
       backgroundSize: {
         "50":"50px",
-        "60":"60px"
+        "60":"60px",
+        "250":"250px"
       },
       borderWidth:{
         1:"1px"
