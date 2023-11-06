@@ -1067,6 +1067,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .pb-7 {
   padding-bottom: 1.75rem;
 }
@@ -1783,6 +1788,10 @@ textarea {
     margin-top: 7rem;
   }
 
+  .md\:ml-8 {
+    margin-left: 2rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1874,12 +1883,35 @@ textarea {
     padding-bottom: 3rem;
   }
 
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .md\:px-48 {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
+  .md\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
   .md\:pl-12 {
     padding-left: 3rem;
   }
 
   .md\:pt-24 {
     padding-top: 6rem;
+  }
+
+  .md\:pl-1 {
+    padding-left: 0.25rem;
+  }
+
+  .md\:pl-10 {
+    padding-left: 2.5rem;
   }
 
   .md\:text-right {
@@ -1908,6 +1940,10 @@ textarea {
 }
 
 @media (min-width: 1024px) {
+  .lg\:ml-12 {
+    margin-left: 3rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1928,8 +1964,31 @@ textarea {
     background-size: 60px;
   }
 
+  .lg\:bg-\[position\:82\%_20\%\] {
+    background-position: 82% 20%;
+  }
+
   .lg\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+
+  .lg\:px-56 {
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .lg\:pl-14 {
+    padding-left: 3.5rem;
   }
 }
