@@ -13,6 +13,8 @@ const config: Config = {
         'header-bg-image-mobile': 'url(/images/header-bg-image-mobile.svg)',
         'dots': 'url(/images/dots.svg)',
         'circle': 'url(/images/circle-bg.svg)',
+        'features-two-circles': 'url(/images/features/1-bg.svg)',
+        'features': 'url(/images/features/bg-features.svg)',
       },
       backgroundSize: {
         "50":"50px",

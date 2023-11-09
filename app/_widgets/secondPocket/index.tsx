@@ -6,7 +6,7 @@ import Navigate from "@/app/_components/navigate/navigate";
 
 export default function SecondPocket() {
   return (
-    <section className="flex flex-col-reverse px-4 justify-center lg:flex-row md:px-48 lg:px-56 items-center pt-12 md:pt-24 bg-circle bg-no-repeat bg-[position:100%_60%] lg:bg-[position:82%_20%] bg-250">
+    <section className="flex flex-col-reverse px-4 justify-center lg:flex-row md:px-40 items-center pt-12 md:pt-24 bg-circle bg-no-repeat bg-[position:100%_60%] lg:bg-[position:82%_20%] bg-250">
       <div className="text-sm font-medium mb-9 text-justify md:pl-10 lg:pl-14">
         <h3 className="font-bold text-2xl mb-3 md:mb-5 text-gray6 text-center md:text-right mt-4 md:mt-0">
           بنگاه املاک در جیب شماست!
