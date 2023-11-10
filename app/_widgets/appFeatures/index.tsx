@@ -104,7 +104,7 @@ export default function AppFeatures() {
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 w-full">
           <BlackCard />
           {data.map((item) => (
-            <Card data={item} />
+            <Card key={item.title} data={item} />
           ))}
         </div>
       </div>
