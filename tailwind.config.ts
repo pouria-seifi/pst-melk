@@ -17,6 +17,7 @@ const config: Config = {
         'features': 'url(/images/features/bg-features.svg)',
         'eventsTillNow': 'url(/images/events-till-now-bg.svg)',
         'eventsTillNowMobile': 'url(/images/events-till-now-bg-mobile.svg)',
+        'twoCirclesManageFiles':'url(/images/two-circles-manage-files.svg)'
       },
       backgroundSize: {
         "50":"50px",

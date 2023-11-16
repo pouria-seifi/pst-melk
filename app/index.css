@@ -677,6 +677,10 @@ video {
   margin-left: 2rem;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .mr-10 {
   margin-right: 2.5rem;
 }
@@ -813,12 +817,20 @@ video {
   width: 100%;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
 .max-w-\[183px\] {
   max-width: 183px;
 }
 
 .max-w-\[500px\] {
   max-width: 500px;
+}
+
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .cursor-pointer {
@@ -989,6 +1001,10 @@ video {
   background-image: url(/images/header-bg-image-mobile.svg);
 }
 
+.bg-twoCirclesManageFiles {
+  background-image: url(/images/two-circles-manage-files.svg);
+}
+
 .bg-250 {
   background-size: 250px;
 }
@@ -1003,6 +1019,10 @@ video {
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-\[position\:10\%_100\%\] {
+  background-position: 10% 100%;
 }
 
 .bg-\[position\:100\%_60\%\] {
@@ -1098,6 +1118,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .py-7 {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
@@ -1140,6 +1165,10 @@ video {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-justify {
   text-align: justify;
 }
@@ -1164,6 +1193,11 @@ video {
   line-height: 1.5rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1177,11 +1211,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1247,6 +1276,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray1 {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1838,17 +1872,12 @@ textarea {
     margin-right: auto;
   }
 
-  .md\:mx-4 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
   .md\:mb-0 {
     margin-bottom: 0px;
   }
 
-  .md\:mb-4 {
-    margin-bottom: 1rem;
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
   }
 
   .md\:mb-5 {
@@ -1857,6 +1886,18 @@ textarea {
 
   .md\:mb-6 {
     margin-bottom: 1.5rem;
+  }
+
+  .md\:mb-auto {
+    margin-bottom: auto;
+  }
+
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .md\:ml-10 {
+    margin-left: 2.5rem;
   }
 
   .md\:ml-3 {
@@ -1891,6 +1932,18 @@ textarea {
     margin-top: 7rem;
   }
 
+  .md\:mt-auto {
+    margin-top: auto;
+  }
+
+  .md\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .md\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1905,6 +1958,14 @@ textarea {
 
   .md\:w-56 {
     width: 14rem;
+  }
+
+  .md\:w-60 {
+    width: 15rem;
+  }
+
+  .md\:w-64 {
+    width: 16rem;
   }
 
   .md\:min-w-\[470px\] {
@@ -1925,10 +1986,6 @@ textarea {
 
   .md\:justify-start {
     justify-content: flex-start;
-  }
-
-  .md\:justify-between {
-    justify-content: space-between;
   }
 
   .md\:gap-4 {
@@ -1964,6 +2021,10 @@ textarea {
     background-image: url(/images/header-bg-image.svg);
   }
 
+  .md\:bg-\[position\:45\%_100\%\] {
+    background-position: 45% 100%;
+  }
+
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1972,6 +2033,11 @@ textarea {
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .md\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .md\:px-16 {
@@ -1999,12 +2065,21 @@ textarea {
     padding-bottom: 3rem;
   }
 
+  .md\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
   .md\:pl-10 {
     padding-left: 2.5rem;
   }
 
   .md\:pt-24 {
     padding-top: 6rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
   }
 
   .md\:text-right {
@@ -2038,12 +2113,49 @@ textarea {
     margin-right: 1rem;
   }
 
-  .lg\:ml-12 {
-    margin-left: 3rem;
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .lg\:mb-4 {
     margin-bottom: 1rem;
+  }
+
+  .lg\:ml-12 {
+    margin-left: 3rem;
+  }
+
+  .lg\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .lg\:mb-auto {
+    margin-bottom: auto;
+  }
+
+  .lg\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .lg\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .lg\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .lg\:mt-28 {
+    margin-top: 7rem;
+  }
+
+  .lg\:mt-auto {
+    margin-top: auto;
+  }
+
+  .lg\:ml-6 {
+    margin-left: 1.5rem;
   }
 
   .lg\:flex {
@@ -2052,6 +2164,10 @@ textarea {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:w-64 {
+    width: 16rem;
   }
 
   .lg\:grid-cols-3 {
@@ -2078,12 +2194,60 @@ textarea {
     background-position: 82% 20%;
   }
 
+  .lg\:bg-\[position\:45\%_100\%\] {
+    background-position: 45% 100%;
+  }
+
   .lg\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
   }
 
+  .lg\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .lg\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .lg\:px-36 {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .lg\:pl-14 {
     padding-left: 3.5rem;
+  }
+
+  .lg\:text-right {
+    text-align: right;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 }
