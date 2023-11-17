@@ -6,7 +6,7 @@ import WhiteArrowLeft from "/public/images/white-arrow-left.svg";
 
 export default function ManageFiles() {
   return (
-    <section className="mt-10 lg:mt-28 mb-20 px-6 lg:px-40 py-8 mx-4 lg:mx-auto text-justify">
+    <section className="mt-10 lg:mt-28 mb-20 px-4 lg:px-40 py-8 mx-4 lg:mx-auto text-justify">
       <div className="bg-secondary bg-twoCirclesManageFiles bg-no-repeat bg-[position:10%_100%] lg:bg-[position:45%_100%] rounded-2xl flex justify-between flex-col lg:flex-row items-center px-6 lg:px-14 py-6 lg:py-14">
         <Image
           className="hidden lg:flex lg:ml-6"

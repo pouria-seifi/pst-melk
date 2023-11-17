@@ -2,7 +2,12 @@ import React from "react";
 import Link from "next/link";
 import { utils } from "@/app/_utility";
 
-type Types = "primary" | "secondary" | "thirdinary" | "quaterdinary";
+type Types =
+  | "primary"
+  | "secondary"
+  | "thirdinary"
+  | "quaterdinary"
+  | "quinary";
 
 interface ButtonProps {
   label?: string;
@@ -24,6 +29,8 @@ const buttonTypes = {
     "border-primary text-primary bg-white py-1.5 px-2.5 flex items-center row justify-center rounded border-1 rounded border-solid",
   quaterdinary:
     "border-primary text-white bg-primary py-1.5 px-2.5 flex items-center row justify-center rounded border-1 rounded border-solid",
+  quinary:
+    "text-white bg-secondary py-1.5 px-2.5 flex items-center row w-44 justify-center rounded",
 };
 
 const Navigate: React.FC<ButtonProps> = ({

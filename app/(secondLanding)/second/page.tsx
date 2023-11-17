@@ -3,6 +3,7 @@ import Contact from "@/app/_widgets/contact";
 import EventsTillNow from "@/app/_widgets/eventsTillNow";
 import FAQ from "@/app/_widgets/faq";
 import ManageFiles from "@/app/_widgets/managaFiles";
+import Plans from "@/app/_widgets/plans";
 import QuoteFromUsers from "@/app/_widgets/quoteFromUsers";
 import SecondPocket from "@/app/_widgets/secondPocket";
 import { Qoute } from "@/app/globalTypes";
@@ -55,6 +56,7 @@ export default function Home() {
       <EventsTillNow />
       <QuoteFromUsers title="تجربه مشاورین مسکن" quotes={quotes} />
       <ManageFiles />
+      <Plans />
       <FAQ />
       <Contact />
     </Fragment>

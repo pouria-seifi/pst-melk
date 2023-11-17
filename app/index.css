@@ -697,6 +697,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-11 {
+  margin-top: 2.75rem;
+}
+
 .mt-14 {
   margin-top: 3.5rem;
 }
@@ -743,6 +747,14 @@ video {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .block {
@@ -805,6 +817,10 @@ video {
   width: 11rem;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
 .w-56 {
   width: 14rem;
 }
@@ -815,10 +831,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-48 {
-  width: 12rem;
 }
 
 .max-w-\[183px\] {
@@ -897,6 +909,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -941,6 +957,18 @@ video {
   border-top-width: 1px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-t-8 {
+  border-top-width: 8px;
+}
+
+.border-t-4 {
+  border-top-width: 4px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -955,9 +983,19 @@ video {
   border-color: rgb(3 133 244 / var(--tw-border-opacity));
 }
 
+.border-secondary {
+  --tw-border-opacity: 1;
+  border-color: rgb(34 35 56 / var(--tw-border-opacity));
+}
+
 .bg-gray1 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .bg-gray9 {
@@ -1165,10 +1203,6 @@ video {
   text-align: center;
 }
 
-.text-right {
-  text-align: right;
-}
-
 .text-justify {
   text-align: justify;
 }
@@ -1233,6 +1267,11 @@ video {
   line-height: 1.25rem;
 }
 
+.text-gray1 {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
 .text-gray2 {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
@@ -1276,11 +1315,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray1 {
-  --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1876,28 +1910,12 @@ textarea {
     margin-bottom: 0px;
   }
 
-  .md\:mb-2 {
-    margin-bottom: 0.5rem;
-  }
-
   .md\:mb-5 {
     margin-bottom: 1.25rem;
   }
 
   .md\:mb-6 {
     margin-bottom: 1.5rem;
-  }
-
-  .md\:mb-auto {
-    margin-bottom: auto;
-  }
-
-  .md\:ml-0 {
-    margin-left: 0px;
-  }
-
-  .md\:ml-10 {
-    margin-left: 2.5rem;
   }
 
   .md\:ml-3 {
@@ -1932,16 +1950,16 @@ textarea {
     margin-top: 7rem;
   }
 
-  .md\:mt-auto {
-    margin-top: auto;
+  .md\:mb-8 {
+    margin-bottom: 2rem;
   }
 
-  .md\:ml-4 {
-    margin-left: 1rem;
+  .md\:mt-3 {
+    margin-top: 0.75rem;
   }
 
-  .md\:ml-6 {
-    margin-left: 1.5rem;
+  .md\:mt-11 {
+    margin-top: 2.75rem;
   }
 
   .md\:flex {
@@ -1958,14 +1976,6 @@ textarea {
 
   .md\:w-56 {
     width: 14rem;
-  }
-
-  .md\:w-60 {
-    width: 15rem;
-  }
-
-  .md\:w-64 {
-    width: 16rem;
   }
 
   .md\:min-w-\[470px\] {
@@ -1996,6 +2006,14 @@ textarea {
     gap: 1.5rem;
   }
 
+  .md\:gap-8 {
+    gap: 2rem;
+  }
+
+  .md\:border-t-1 {
+    border-top-width: 1px;
+  }
+
   .md\:border-none {
     border-style: none;
   }
@@ -2021,8 +2039,8 @@ textarea {
     background-image: url(/images/header-bg-image.svg);
   }
 
-  .md\:bg-\[position\:45\%_100\%\] {
-    background-position: 45% 100%;
+  .md\:p-8 {
+    padding: 2rem;
   }
 
   .md\:px-0 {
@@ -2033,11 +2051,6 @@ textarea {
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
-  }
-
-  .md\:px-14 {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
   }
 
   .md\:px-16 {
@@ -2065,21 +2078,12 @@ textarea {
     padding-bottom: 3rem;
   }
 
-  .md\:py-14 {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
-  }
-
   .md\:pl-10 {
     padding-left: 2.5rem;
   }
 
   .md\:pt-24 {
     padding-top: 6rem;
-  }
-
-  .md\:text-center {
-    text-align: center;
   }
 
   .md\:text-right {
@@ -2105,6 +2109,11 @@ textarea {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2118,16 +2127,12 @@ textarea {
     margin-right: auto;
   }
 
-  .lg\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
-  .lg\:ml-12 {
-    margin-left: 3rem;
-  }
-
   .lg\:mb-2 {
     margin-bottom: 0.5rem;
+  }
+
+  .lg\:mb-4 {
+    margin-bottom: 1rem;
   }
 
   .lg\:mb-auto {
@@ -2138,12 +2143,16 @@ textarea {
     margin-left: 0px;
   }
 
-  .lg\:ml-10 {
-    margin-left: 2.5rem;
+  .lg\:ml-12 {
+    margin-left: 3rem;
   }
 
   .lg\:ml-4 {
     margin-left: 1rem;
+  }
+
+  .lg\:ml-6 {
+    margin-left: 1.5rem;
   }
 
   .lg\:mt-28 {
@@ -2154,8 +2163,16 @@ textarea {
     margin-top: auto;
   }
 
-  .lg\:ml-6 {
-    margin-left: 1.5rem;
+  .lg\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .lg\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .lg\:mt-24 {
+    margin-top: 6rem;
   }
 
   .lg\:flex {
@@ -2164,10 +2181,6 @@ textarea {
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:w-64 {
-    width: 16rem;
   }
 
   .lg\:grid-cols-3 {
@@ -2190,17 +2203,12 @@ textarea {
     background-size: 60px;
   }
 
-  .lg\:bg-\[position\:82\%_20\%\] {
-    background-position: 82% 20%;
-  }
-
   .lg\:bg-\[position\:45\%_100\%\] {
     background-position: 45% 100%;
   }
 
-  .lg\:px-40 {
-    padding-left: 10rem;
-    padding-right: 10rem;
+  .lg\:bg-\[position\:82\%_20\%\] {
+    background-position: 82% 20%;
   }
 
   .lg\:px-14 {
@@ -2208,29 +2216,14 @@ textarea {
     padding-right: 3.5rem;
   }
 
+  .lg\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
   .lg\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
-  }
-
-  .lg\:px-36 {
-    padding-left: 9rem;
-    padding-right: 9rem;
-  }
-
-  .lg\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
-  .lg\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .lg\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .lg\:pl-14 {
@@ -2244,10 +2237,5 @@ textarea {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
   }
 }
