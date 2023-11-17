@@ -45,7 +45,7 @@ export default function Header() {
   };
 
   return (
-    <section className="bg-header-bg-image-mobile md:bg-header-bg-image min-h-[26rem] bg-no-repeat bg-cover flex items-center justify-center py-16 mb-44 md:mb-0">
+    <section className="bg-header-bg-image-mobile md:bg-header-bg-image min-h-[26rem] bg-no-repeat bg-cover flex items-center justify-center py-16 mb-44 mt-14 md:mb-0">
       <div className="md:bg-dots bg-no-repeat bg-[position:94%_10%] bg-50 lg:bg-60 bg-white shadow-sm rounded-3xl py-7 md:py-12 px-10 md:px-16 w-auto mx-4 -mb-80 md:mb-0">
         <div className="">
           <h3 className="text-primary text-3xl font-bold text-center">

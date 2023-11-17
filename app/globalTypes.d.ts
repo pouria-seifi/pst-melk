@@ -3,3 +3,8 @@ export interface Qoute {
   userQuote: string;
   subtitle: string;
 }
+
+export interface MenuItem {
+    name: string;
+    to:string;
+}
