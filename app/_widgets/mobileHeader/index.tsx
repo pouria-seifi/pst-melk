@@ -1,8 +1,10 @@
 import Image from "next/image";
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import Navigate from "@/app/_components/navigate/navigate";
 import CloseBtn from "/public/images/close-btn.svg";
 import { MenuItem } from "@/app/globalTypes";
+import Button from "@/app/_components/button/button";
+import LoginAccount from "../loginAccount";
 
 export default function MobileHeader({
   isModalOpen,
@@ -15,6 +17,14 @@ export default function MobileHeader({
   toggleModal: React.MouseEventHandler<HTMLDivElement>;
   children?: React.ReactNode;
 }) {
+  const [loginMode, setLoginMode] = useState<boolean>(false);
+
+  const closeAndResetModal = (e: any) => {
+    toggleModal(e);
+    setTimeout(() => {
+      setLoginMode(false);
+    }, 1000);
+  };
 
   return (
     <Fragment>
@@ -36,8 +46,15 @@ export default function MobileHeader({
         <div className="bg-white flex flex-col">
           {/* header */}
           <div className="flex flex-row justify-between mb-2">
-            <span></span>
-            <div className="flex flex-row mr-auto" onClick={toggleModal}>
+            <span className="text-gray8 text-lg font-bold">
+              {loginMode && "ورود به حساب کاربری"}
+            </span>
+            <div
+              className="flex flex-row mr-auto"
+              onClick={(e) => {
+                closeAndResetModal(e);
+              }}
+            >
               <span className="text-gray8 font-bold text-base">بستن</span>
               <Image
                 className="mr-4"
@@ -49,26 +66,41 @@ export default function MobileHeader({
             </div>
           </div>
           <div className="flex flex-col">
-            {menuItems.map(({ name, to }) => (
-              <Navigate
-                key={name}
-                className="border-b-1 border-solid border-gray2 py-4 last:border-none"
-                href={to}
-              >
-                {name}
-              </Navigate>
-            ))}
+            {loginMode ? (
+              <LoginAccount
+                toggleModal={(e: any) => {
+                  closeAndResetModal(e);
+                }}
+              />
+            ) : (
+              <Fragment>
+                <div className="flex flex-col">
+                  {menuItems.map(({ name, to }) => (
+                    <Navigate
+                      key={name}
+                      className="border-b-1 border-solid border-gray2 py-4 last:border-none"
+                      href={to}
+                    >
+                      {name}
+                    </Navigate>
+                  ))}
+                </div>
+                <Button
+                  onClick={() => {
+                    setLoginMode(true);
+                  }}
+                  type="quaterdinary"
+                  className="w-full h-12 mt-8 mb-4"
+                >
+                  ورود به سیستم
+                </Button>
+                <Navigate type="thirdinary" href="/" className="w-full h-12">
+                  ثبت آگهی ملک
+                </Navigate>
+              </Fragment>
+            )}
           </div>
-          <Navigate
-            href="/"
-            type="quaterdinary"
-            className="w-full h-12 mt-8 mb-4"
-          >
-            ورود به سیستم
-          </Navigate>
-          <Navigate type="thirdinary" href="/" className="w-full h-12">
-            ثبت آگهی ملک
-          </Navigate>
+
           {children}
         </div>
       </div>

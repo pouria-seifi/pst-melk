@@ -61,6 +61,7 @@ const config: Config = {
       'gray8': '#101827',
       'gray9': '#030712',
       'white': '#FFFFFF',
+      'red': '#F00'
     },
   },
   plugins: [],
