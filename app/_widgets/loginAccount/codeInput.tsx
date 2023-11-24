@@ -60,7 +60,7 @@ const PinCodeInput = ({
         <input
           key={index}
           ref={(el) => (inputRefs.current[index] = el)}
-          type="text"
+          type="number"
           className={`w-100 h-12 text-center bg-gray1 rounded-md ${
             hasError ? "border-red border-solid border-1" : ""
           }`}
