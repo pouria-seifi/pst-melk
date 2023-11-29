@@ -1,15 +1,17 @@
 import Button from "@/app/_components/button/button";
-import { number, phoneNumber } from "@/app/_utility/regex";
+import { number, phoneNumberRegex } from "@/app/_utility/regex";
 import React, { useState } from "react";
 
 export default function LoginPhoneNumber({
   toggleModal,
   goToEnterCode,
   setPhoneNumber,
+  phoneNumber,
 }: {
   toggleModal: Function;
   goToEnterCode: Function;
   setPhoneNumber: Function;
+  phoneNumber: string;
 }) {
   const [showError, setShowError] = useState(false);
   const [disabledConfirmationButton, setDisabledConfirmationButton] =
@@ -30,20 +32,23 @@ export default function LoginPhoneNumber({
             showError ? "border-red border-1 border-solid" : ""
           }`}
           placeholder="شماره موبایل"
+          value={phoneNumber}
           onChange={(e) => {
+            setPhoneNumber(e.target.value);
             if (!number.test(e.target.value)) {
-              setShowError(true);
-              setDisabledConfirmationButton(true);
+              setPhoneNumber(phoneNumber.replaceAll(e.target.value, ""));
+              // setShowError(true);
+              // setDisabledConfirmationButton(true);
               return;
             }
-            if (phoneNumber.test(e.target.value) && e.target.value.length > 9) {
+            if (phoneNumberRegex.test(e.target.value)) {
               setShowError(false);
               setDisabledConfirmationButton(false);
               setPhoneNumber(e.target.value);
               return;
             }
             if (
-              !phoneNumber.test(e.target.value) &&
+              !phoneNumberRegex.test(e.target.value) &&
               e.target.value.length > 9
             ) {
               setShowError(true);
@@ -51,6 +56,7 @@ export default function LoginPhoneNumber({
               return;
             }
             setShowError(false);
+            setDisabledConfirmationButton(true);
           }}
           maxLength={11}
         />

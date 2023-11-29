@@ -18,6 +18,7 @@ export default function LoginAccount({
             setShowLoginPhoneNumber(false);
           }}
           setPhoneNumber={setPhoneNumber}
+          phoneNumber={phoneNumber}
         />
       ) : (
         <EnterCode
